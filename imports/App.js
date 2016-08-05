@@ -5,11 +5,30 @@ import { render } from 'react-dom';
 
 import ViewModel from 'viewmodel-react';
 
+
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+
+
+
 App({
   render(){
-	<div>  
-		<h1>Hello World</h1>
-		<Person />
-	</div>
+   <div> 
+	   <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+	   			
+	   				<Header/>
+	   				
+	   			
+	   	</MuiThemeProvider>
+	   	
+	    <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+		
+					<Body/>
+		
+		</MuiThemeProvider>
+	   	
+	   
+    </div>
   }
 });

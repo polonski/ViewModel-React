@@ -11,6 +11,7 @@ meteor remove blaze-html-templates
 
 meteor add static-html
 
+meteor add manuel:viewmodel
 
 
 '
